@@ -3,6 +3,7 @@ import StatusBar from "@/components/shared/StatusBar";
 import BottomTabBar from "@/components/shared/BottomTabBar";
 import { ChevronUp, ChevronDown, DollarSign, Star } from "lucide-react";
 import VerifiedBadge from "@/components/shared/VerifiedBadge";
+import menteeAvatar from "@/assets/mentee-avatar.jpg";
 
 interface RedMenteesScreenProps {
   onTabChange?: (tab: string) => void;
@@ -111,8 +112,12 @@ const RedMenteesScreen = ({ onTabChange }: RedMenteesScreenProps) => {
                       className="flex items-center justify-between px-4 py-3 border-t border-white/10"
                     >
                       <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
-                          <span className="text-white font-semibold text-sm">👤</span>
+                        <div className="w-10 h-10 rounded-full overflow-hidden">
+                          <img 
+                            src={menteeAvatar} 
+                            alt={mentee.name} 
+                            className="w-full h-full object-cover"
+                          />
                         </div>
                         <div className="flex items-center gap-1">
                           <span className="text-white font-medium">{mentee.name}</span>
