@@ -5,36 +5,16 @@ This project implements the Red and Purple screens from the provided Figma desig
 Screens Included:
 
 Red Theme:
-
 Home
-
 Messages
-
 Institutes
-
-Mentees (with chat avatar)
-
+Mentees 
 Profile
 
 Purple Theme:
 
 All corresponding screens
-
 Bottom tab navigation fully functional
-
-Project Structure:
-
-src/
-├── screens/
-│ ├── RedScreen.tsx
-│ └── PurpleScreen.tsx
-├── components/
-├── navigation/
-│ └── AppNavigator.tsx
-├── theme/
-│ ├── colors.ts
-│ └── fonts.ts
-└── App.tsx
 
 Screens are separated for clarity.
 
