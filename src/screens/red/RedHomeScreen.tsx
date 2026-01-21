@@ -1,8 +1,9 @@
 import StatusBar from "@/components/shared/StatusBar";
 import BottomTabBar from "@/components/shared/BottomTabBar";
 import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal, Search, Video } from "lucide-react";
-import landscapeImg from "@/assets/landscape.png";
-import sponsoredUserImg from "@/assets/sponsored-user.jpg";
+import mountainLandscape from "@/assets/mountain-landscape.jpg";
+import wanderlustAvatar from "@/assets/wanderlust-avatar.jpg";
+import ecowearModel from "@/assets/ecowear-model.jpg";
 
 interface RedHomeScreenProps {
   onTabChange?: (tab: string) => void;
@@ -36,13 +37,17 @@ const RedHomeScreen = ({ onTabChange }: RedHomeScreenProps) => {
           {/* Post Header */}
           <div className="flex items-center justify-between px-4 py-2">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
-                <span className="text-white font-semibold text-sm">W</span>
+              <div className="w-10 h-10 rounded-full overflow-hidden">
+                <img 
+                  src={wanderlustAvatar} 
+                  alt="User avatar" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <div className="flex items-center gap-1">
                   <span className="text-white font-semibold text-sm">wanderlust_anna</span>
-                  <div className="w-4 h-4 rounded-full bg-green-500 flex items-center justify-center">
+                  <div className="w-4 h-4 rounded-full bg-online flex items-center justify-center">
                     <span className="text-white text-[8px]">✓</span>
                   </div>
                 </div>
@@ -53,10 +58,10 @@ const RedHomeScreen = ({ onTabChange }: RedHomeScreenProps) => {
           </div>
 
           {/* Post Image */}
-          <div className="w-full aspect-square bg-gray-800">
+          <div className="w-full aspect-square bg-muted">
             <img 
-              src={landscapeImg} 
-              alt="Landscape" 
+              src={mountainLandscape} 
+              alt="Mountain landscape" 
               className="w-full h-full object-cover"
             />
           </div>
@@ -85,13 +90,13 @@ const RedHomeScreen = ({ onTabChange }: RedHomeScreenProps) => {
         <div className="mt-2">
           <div className="flex items-center justify-between px-4 py-2">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-amber-600 flex items-center justify-center">
                 <span className="text-white font-semibold text-sm">E</span>
               </div>
               <div>
                 <div className="flex items-center gap-1">
                   <span className="text-white font-semibold text-sm">EcoWear</span>
-                  <div className="w-4 h-4 rounded-full bg-red-500 flex items-center justify-center">
+                  <div className="w-4 h-4 rounded-full bg-red-accent flex items-center justify-center">
                     <span className="text-white text-[8px]">✓</span>
                   </div>
                 </div>
@@ -101,10 +106,10 @@ const RedHomeScreen = ({ onTabChange }: RedHomeScreenProps) => {
             <MoreHorizontal className="w-5 h-5 text-white" />
           </div>
           
-          <div className="w-full aspect-square bg-gray-800">
+          <div className="w-full aspect-square bg-muted">
             <img 
-              src={sponsoredUserImg} 
-              alt="Sponsored content" 
+              src={ecowearModel} 
+              alt="EcoWear sponsored content" 
               className="w-full h-full object-cover"
             />
           </div>

@@ -1,8 +1,9 @@
 import StatusBar from "@/components/shared/StatusBar";
 import BottomTabBar from "@/components/shared/BottomTabBar";
 import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal, Search, Video } from "lucide-react";
-import landscapeImg from "@/assets/landscape.png";
-import sponsoredUserImg from "@/assets/sponsored-user.jpg";
+import mountainLandscape from "@/assets/mountain-landscape.jpg";
+import wanderlustAvatar from "@/assets/wanderlust-avatar.jpg";
+import ecowearModel from "@/assets/ecowear-model.jpg";
 
 interface PurpleHomeScreenProps {
   onTabChange?: (tab: string) => void;
@@ -38,7 +39,7 @@ const PurpleHomeScreen = ({ onTabChange }: PurpleHomeScreenProps) => {
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full overflow-hidden">
                 <img 
-                  src={sponsoredUserImg} 
+                  src={wanderlustAvatar} 
                   alt="User avatar" 
                   className="w-full h-full object-cover"
                 />
@@ -59,8 +60,8 @@ const PurpleHomeScreen = ({ onTabChange }: PurpleHomeScreenProps) => {
           {/* Post Image */}
           <div className="w-full aspect-square bg-muted">
             <img 
-              src={landscapeImg} 
-              alt="Landscape" 
+              src={mountainLandscape} 
+              alt="Mountain landscape" 
               className="w-full h-full object-cover"
             />
           </div>
@@ -107,8 +108,8 @@ const PurpleHomeScreen = ({ onTabChange }: PurpleHomeScreenProps) => {
           
           <div className="w-full aspect-square bg-muted">
             <img 
-              src={sponsoredUserImg} 
-              alt="Sponsored content" 
+              src={ecowearModel} 
+              alt="EcoWear sponsored content" 
               className="w-full h-full object-cover"
             />
           </div>
