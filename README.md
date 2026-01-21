@@ -1,73 +1,67 @@
-# Welcome to your Lovable project
+React Native App - Red & Purple Screens
 
-## Project info
+This project implements the Red and Purple screens from the provided Figma design using React Native. All screens are built pixel-perfect, with fully functional navigation and clickable elements.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Screens Included:
 
-## How can I edit this code?
+Red Theme:
 
-There are several ways of editing your application.
+Home
 
-**Use Lovable**
+Messages
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Institutes
 
-Changes made via Lovable will be committed automatically to this repo.
+Mentees (with chat avatar)
 
-**Use your preferred IDE**
+Profile
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Purple Theme:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+All corresponding screens
 
-Follow these steps:
+Bottom tab navigation fully functional
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+Project Structure:
+
+src/
+├── screens/
+│ ├── RedScreen.tsx
+│ └── PurpleScreen.tsx
+├── components/
+├── navigation/
+│ └── AppNavigator.tsx
+├── theme/
+│ ├── colors.ts
+│ └── fonts.ts
+└── App.tsx
+
+Screens are separated for clarity.
+
+Navigation is implemented using React Navigation.
+
+Styles are managed via StyleSheet for scalability.
+
+Setup & Run:
+
+Clone the repository:
 git clone <YOUR_GIT_URL>
+cd <PROJECT_DIRECTORY>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Install dependencies:
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
+Run the app:
+npx react-native run-android # For Android
+npx react-native run-ios # For iOS
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Notes:
 
-**Edit a file directly in GitHub**
+All screens and navigation strictly follow the Figma design.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Any minor code-level adjustments (e.g., safe-area handling, platform-specific tweaks) are documented in the code comments.
 
-**Use GitHub Codespaces**
+No extra features or UI elements have been added beyond what the Figma design specifies.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Figma Design Reference:
+https://www.figma.com/design/BXTFApxwLTq7HA9HyIEe3R/TASK---Amna---Usman?node-id=0-1&p=f&t=FPJ2NZhLVi9cok2w-0
