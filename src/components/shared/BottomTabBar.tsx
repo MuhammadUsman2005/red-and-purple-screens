@@ -1,4 +1,4 @@
-import { Home, MessageCircle, Building2, Users, User } from "lucide-react";
+import { Home, MessageCircle, Building2, Users, User, PlusCircle, Heart } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface TabItem {
@@ -28,8 +28,8 @@ const BottomTabBar = ({ theme = "red", activeTab = "Messages", onTabChange }: Bo
   const purpleTabs = [
     { id: "Home", icon: Home, label: "Home" },
     { id: "Messages", icon: MessageCircle, label: "Messages" },
-    { id: "Post", icon: Building2, label: "Post" },
-    { id: "Hope", icon: Users, label: "Hope" },
+    { id: "Post", icon: PlusCircle, label: "Post" },
+    { id: "Hope", icon: Heart, label: "Hope" },
     { id: "Profile", icon: User, label: "Profile" },
   ];
   

@@ -26,7 +26,7 @@ const PurpleHomeScreen = ({ onTabChange }: PurpleHomeScreenProps) => {
             <Search className="w-6 h-6 text-white" />
             <div className="relative">
               <Video className="w-6 h-6 text-white" />
-              <div className="absolute -top-1 -right-1 w-2 h-2 bg-purple-accent rounded-full" />
+              <div className="absolute -top-1 -right-1 w-2 h-2 bg-online rounded-full" />
             </div>
           </div>
         </div>
@@ -36,8 +36,12 @@ const PurpleHomeScreen = ({ onTabChange }: PurpleHomeScreenProps) => {
           {/* Post Header */}
           <div className="flex items-center justify-between px-4 py-2">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
-                <span className="text-white font-semibold text-sm">W</span>
+              <div className="w-10 h-10 rounded-full overflow-hidden">
+                <img 
+                  src={sponsoredUserImg} 
+                  alt="User avatar" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <div className="flex items-center gap-1">
@@ -85,7 +89,7 @@ const PurpleHomeScreen = ({ onTabChange }: PurpleHomeScreenProps) => {
         <div className="mt-2">
           <div className="flex items-center justify-between px-4 py-2">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-amber-600 flex items-center justify-center">
                 <span className="text-white font-semibold text-sm">E</span>
               </div>
               <div>
